@@ -148,6 +148,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-tech">
+          <a href="/categories/Tech" rel="section">
+            
+              <i class="menu-item-icon fa fa-tasks fa-fw"></i> <br />
+            
+            Tech
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -164,6 +174,16 @@
               <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
             Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            About
           </a>
         </li>
       
@@ -194,7 +214,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -206,8 +226,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/03/23/hello-world/" itemprop="url">
-                  Hello World
+                <a class="post-title-link" href="/2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/" itemprop="url">
+                  iOS-利用Catogory给已存在对象添加实例变量
                 </a>
               
             
@@ -220,14 +240,40 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-03-23T09:30:17+08:00" content="2016-03-23">
-              2016-03-23
+            <time itemprop="dateCreated" datetime="2016-03-24T20:31:21+08:00" content="2016-03-24">
+              2016-03-24
             </time>
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -249,15 +295,21 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+            <p>之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。</p>
+<h2 id="Category与实例变量"><a href="#Category与实例变量" class="headerlink" title="Category与实例变量"></a>Category与实例变量</h2><p>Category是Objective-C中的一个扩展机制，通过Category，开发者可以在外部给一个类添加新的方法，从而达到扩展已知类的作用，这是比继承要更加方便的扩展方法，有助于把方法分类应用到不同的需求中，此外也可以帮助开发者对不开源的库进行自己的调整。针对后一种情况，开发者很有可能会需要添加自己想要的实例变量，但是，在编译时，Objective-C是不允许向Category添加实例变量的（虽然允许声明属性，但不会自动生成getter/setter），但是也并非没有办法。OC的运行时特性可以实现这样的需求。</p>
+<h2 id="利用Category添加实例变量"><a href="#利用Category添加实例变量" class="headerlink" title="利用Category添加实例变量"></a>利用Category添加实例变量</h2><p>Objective-C的运行时库提供了两个函数，<code>objc_getAssociatedObject()</code>和<code>objc_setAssociatedObject()</code>.可以利用这两个函数来重写getter/setter.以下是示例：</p>
+<ol>
+<li><p>首先要引入运行时库：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#import <span class="meta-string">&lt;objc/runtime.h&gt;</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加属性</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">MyCategory</span>(<span class="title">ClassName</span>)</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>) <span class="built_in">NSString</span> *newProperty;</span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重写getter/setter</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">MyCategory</span>(<span class="title">ClassName</span>)</span></span><br><span class="line"></span><br><span class="line">-(<span class="keyword">void</span>) setNewProperty:(<span class="built_in">NSString</span> *)newProperty;</span><br><span class="line">&#123;</span><br><span class="line">	objc_setAssociatedObject(<span class="keyword">self</span>, &amp;newProperty, newProperty, OBJC_ASSO<span class="built_in">CIATION_COPY_NONATOMIC</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-(<span class="keyword">void</span>) getNewProperty</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">return</span> objc_getAssociatedObject(<span class="keyword">self</span>, &amp;newProperty);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>其中，<code>objc_getAssociatedObject()</code>接受四个参数，第一个参数是源对象，第二个参数是标记关联属性的键，其类型是<code>const void *</code>，有几种写法都是对的：<code>@selector()</code>, <code>&amp;</code>，和<code>const void *</code>，第三个参数是关联对象(即传入的值)，第四个参数是关联策略，是一个枚举值，包括：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> &#123;</span><br><span class="line">OBJC_ASSOCIATION_ASSIGN = <span class="number">0</span>,</span><br><span class="line">OBJC_ASSOCIATION_RETAIN_NONATOMIC = <span class="number">1</span>,</span><br><span class="line">OBJC_ASSOCIATION_COPY_NONATOMIC = <span class="number">3</span>,</span><br><span class="line">OBJC_ASSOCIATION_RETAIN = <span class="number">01401</span>,</span><br><span class="line">OBJC_ASSOCIATION_COPY = <span class="number">01403</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 
           
         
@@ -329,7 +381,21 @@
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">categories</span>
+              
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -444,9 +510,28 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"jin0501"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+  
+
+
 
 
 
