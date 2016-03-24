@@ -65,7 +65,7 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
 <meta property="og:site_name" content="JIN">
 <meta property="og:description" content="之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。
 Category与实例变量Category是Objective-C中的一个扩展机制，通过Category，开发者可以在外部给一个类添加新的方法，从而达到扩展已知类的作用，这是比继承要更加方便的扩展方法，有助于把方法分类应用到不同的需求中，此外也可以帮助开发者对不开源的库进行自己的调整。针对后一种情况，开发">
-<meta property="og:updated_time" content="2016-03-24T14:48:29.000Z">
+<meta property="og:updated_time" content="2016-03-24T15:20:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS-利用Catogory给已存在对象添加实例变量">
 <meta name="twitter:description" content="之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。
@@ -294,6 +294,7 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
       
         <p>之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。</p>
 <h2 id="Category与实例变量"><a href="#Category与实例变量" class="headerlink" title="Category与实例变量"></a>Category与实例变量</h2><p>Category是Objective-C中的一个扩展机制，通过Category，开发者可以在外部给一个类添加新的方法，从而达到扩展已知类的作用，这是比继承要更加方便的扩展方法，有助于把方法分类应用到不同的需求中，此外也可以帮助开发者对不开源的库进行自己的调整。针对后一种情况，开发者很有可能会需要添加自己想要的实例变量，但是，在编译时，Objective-C是不允许向Category添加实例变量的（虽然允许声明属性，但不会自动生成getter/setter），但是也并非没有办法。OC的运行时特性可以实现这样的需求。</p>
+<a id="more"></a>
 <h2 id="利用Category添加实例变量"><a href="#利用Category添加实例变量" class="headerlink" title="利用Category添加实例变量"></a>利用Category添加实例变量</h2><p>Objective-C的运行时库提供了两个函数，<code>objc_getAssociatedObject()</code>和<code>objc_setAssociatedObject()</code>.可以利用这两个函数来重写getter/setter.以下是示例：</p>
 <ol>
 <li><p>首先要引入运行时库：</p>
