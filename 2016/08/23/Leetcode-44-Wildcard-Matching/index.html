@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="iOS,Objective-C," />
+  <meta name="keywords" content="Leetcode," />
 
 
 
@@ -57,19 +57,25 @@
 
 
 
-<meta name="description" content="之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。
-Category与实例变量Category是Objective-C中的一个扩展机制，通过Category，开发者可以在外部给一个类添加新的方法，从而达到扩展已知类的作用，这是比继承要更加方便的扩展方法，有助于把方法分类应用到不同的需求中，此外也可以帮助开发者对不开源的库进行自己的调整。针对后一种情况，开发">
+<meta name="description" content="题目如下：
+
+Implement wildcard pattern matching with support for ‘?’ and ‘‘.‘?’ Matches any single character.‘‘ Matches any sequence of characters (including the empty sequence).
+The matching should cover">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iOS-利用Catogory给已存在对象添加实例变量">
-<meta property="og:url" content="http://jinpoon.com/2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/index.html">
+<meta property="og:title" content="Leetcode 44: Wildcard Matching">
+<meta property="og:url" content="http://jinpoon.com/2016/08/23/Leetcode-44-Wildcard-Matching/index.html">
 <meta property="og:site_name" content="JIN">
-<meta property="og:description" content="之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。
-Category与实例变量Category是Objective-C中的一个扩展机制，通过Category，开发者可以在外部给一个类添加新的方法，从而达到扩展已知类的作用，这是比继承要更加方便的扩展方法，有助于把方法分类应用到不同的需求中，此外也可以帮助开发者对不开源的库进行自己的调整。针对后一种情况，开发">
-<meta property="og:updated_time" content="2016-03-24T15:20:15.000Z">
+<meta property="og:description" content="题目如下：
+
+Implement wildcard pattern matching with support for ‘?’ and ‘‘.‘?’ Matches any single character.‘‘ Matches any sequence of characters (including the empty sequence).
+The matching should cover">
+<meta property="og:updated_time" content="2016-08-23T16:37:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS-利用Catogory给已存在对象添加实例变量">
-<meta name="twitter:description" content="之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。
-Category与实例变量Category是Objective-C中的一个扩展机制，通过Category，开发者可以在外部给一个类添加新的方法，从而达到扩展已知类的作用，这是比继承要更加方便的扩展方法，有助于把方法分类应用到不同的需求中，此外也可以帮助开发者对不开源的库进行自己的调整。针对后一种情况，开发">
+<meta name="twitter:title" content="Leetcode 44: Wildcard Matching">
+<meta name="twitter:description" content="题目如下：
+
+Implement wildcard pattern matching with support for ‘?’ and ‘‘.‘?’ Matches any single character.‘‘ Matches any sequence of characters (including the empty sequence).
+The matching should cover">
 
 
 
@@ -87,7 +93,7 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
   };
 </script>
 
-  <title> iOS-利用Catogory给已存在对象添加实例变量 | JIN </title>
+  <title> Leetcode 44: Wildcard Matching | JIN </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -237,7 +243,7 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
             
             
               
-                iOS-利用Catogory给已存在对象添加实例变量
+                Leetcode 44: Wildcard Matching
               
             
           </h1>
@@ -249,8 +255,8 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-03-24T20:31:21+08:00" content="2016-03-24">
-              2016-03-24
+            <time itemprop="dateCreated" datetime="2016-08-23T23:52:42+08:00" content="2016-08-23">
+              2016-08-23
             </time>
           </span>
 
@@ -279,8 +285,8 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/" itemprop="commentsCount"></span>
+                <a href="/2016/08/23/Leetcode-44-Wildcard-Matching/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/23/Leetcode-44-Wildcard-Matching/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -302,22 +308,25 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
       
 
       
-        <p>之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。</p>
-<h2 id="Category与实例变量"><a href="#Category与实例变量" class="headerlink" title="Category与实例变量"></a>Category与实例变量</h2><p>Category是Objective-C中的一个扩展机制，通过Category，开发者可以在外部给一个类添加新的方法，从而达到扩展已知类的作用，这是比继承要更加方便的扩展方法，有助于把方法分类应用到不同的需求中，此外也可以帮助开发者对不开源的库进行自己的调整。针对后一种情况，开发者很有可能会需要添加自己想要的实例变量，但是，在编译时，Objective-C是不允许向Category添加实例变量的（虽然允许声明属性，但不会自动生成getter/setter），但是也并非没有办法。OC的运行时特性可以实现这样的需求。</p>
+        <p>题目如下：</p>
+<blockquote>
+<p>Implement wildcard pattern matching with support for ‘?’ and ‘<em>‘.<br>‘?’ Matches any single character.<br>‘</em>‘ Matches any sequence of characters (including the empty sequence).</p>
+<p>The matching should cover the entire input string (not partial).</p>
+<p>The function prototype should be:<br>bool isMatch(const char <em>s, const char </em>p)</p>
+<p>Some examples:<br>isMatch(“aa”,”a”) → false<br>isMatch(“aa”,”aa”) → true<br>isMatch(“aaa”,”aa”) → false<br>isMatch(“aa”, “<em>“) → true<br>isMatch(“aa”, “a</em>“) → true<br>isMatch(“ab”, “?<em>“) → true<br>isMatch(“aab”, “c</em>a*b”) → false</p>
+</blockquote>
 <a id="more"></a>
-<h2 id="利用Category添加实例变量"><a href="#利用Category添加实例变量" class="headerlink" title="利用Category添加实例变量"></a>利用Category添加实例变量</h2><p>Objective-C的运行时库提供了两个函数，<code>objc_getAssociatedObject()</code>和<code>objc_setAssociatedObject()</code>.可以利用这两个函数来重写getter/setter.以下是示例：</p>
-<ol>
-<li><p>首先要引入运行时库：</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#import <span class="meta-string">&lt;objc/runtime.h&gt;</span></span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>添加属性</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">MyCategory</span>(<span class="title">ClassName</span>)</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>) <span class="built_in">NSString</span> *newProperty;</span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重写getter/setter</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">MyCategory</span>(<span class="title">ClassName</span>)</span></span><br><span class="line"></span><br><span class="line">-(<span class="keyword">void</span>) setNewProperty:(<span class="built_in">NSString</span> *)newProperty;</span><br><span class="line">&#123;</span><br><span class="line">	objc_setAssociatedObject(<span class="keyword">self</span>, &amp;newProperty, newProperty, OBJC_ASSO<span class="built_in">CIATION_COPY_NONATOMIC</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-(<span class="keyword">void</span>) getNewProperty</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">return</span> objc_getAssociatedObject(<span class="keyword">self</span>, &amp;newProperty);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>其中，<code>objc_getAssociatedObject()</code>接受四个参数，第一个参数是源对象，第二个参数是标记关联属性的键，其类型是<code>const void *</code>，有几种写法都是对的：<code>@selector()</code>, <code>&amp;</code>，和<code>const void *</code>，第三个参数是关联对象(即传入的值)，第四个参数是关联策略，是一个枚举值，包括：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> &#123;</span><br><span class="line">OBJC_ASSOCIATION_ASSIGN = <span class="number">0</span>,</span><br><span class="line">OBJC_ASSOCIATION_RETAIN_NONATOMIC = <span class="number">1</span>,</span><br><span class="line">OBJC_ASSOCIATION_COPY_NONATOMIC = <span class="number">3</span>,</span><br><span class="line">OBJC_ASSOCIATION_RETAIN = <span class="number">01401</span>,</span><br><span class="line">OBJC_ASSOCIATION_COPY = <span class="number">01403</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>要求是要对字符串s根据模式串p做通配符匹配，通配符有2个，’?’能且仅能匹配一个任意字符，’<em>‘可以匹配一个任意长度的字符串。比较慢也容易想到的是二维DP的做法，但是这个是后面才想出来的，时间复杂度是O(m</em>n)。bool数组dp[m][n]的元素dp[i][j]为True时，表示s[0:i-1]可以与p[0:j-1]成功匹配。<br>在做动态规划时，遵循以下基本规则：</p>
+<blockquote>
+<p>1、若p[j-1]为’<em>‘，可以将其略过或匹配到当前位置的s串中，<br>  即 <code>dp[i][j] = dp[i][j-1] || dp[i-1][j] || dp[i-1][j-1]</code><br>2、若p[j-1]不为’</em>‘，则匹配当前位置的s[i-1]和p[j-1]，<br>    即 <code>dp[i][j] = (s[i-1] == p[j-1] || p[j-1] == &#39;?&#39;) &amp;&amp; dp[i-1][j-1]</code></p>
+</blockquote>
+<p>以下是完整代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Solution &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isMatch</span><span class="params">(<span class="built_in">string</span> s, <span class="built_in">string</span> p)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> lens = s.length(), lenp = p.length();</span><br><span class="line">        <span class="keyword">if</span>(!lens) <span class="keyword">return</span> p==<span class="string">"*"</span>||p==<span class="string">""</span>;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt;&gt; dp(lens+<span class="number">1</span>, <span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt;(lenp + <span class="number">1</span>, <span class="literal">false</span>));</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> i,j;</span><br><span class="line">        dp[<span class="number">0</span>][<span class="number">0</span>] = <span class="literal">true</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">1</span>; i&lt;=lens; i++)&#123;</span><br><span class="line">            dp[i][<span class="number">0</span>] = <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">1</span>; j&lt;=lenp;j++)&#123;</span><br><span class="line">            dp[<span class="number">0</span>][j] = p[j<span class="number">-1</span>] == <span class="string">'*'</span> &amp;&amp; dp[<span class="number">0</span>][j<span class="number">-1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">1</span>; i&lt;=lens; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(j=<span class="number">1</span>; j&lt;=lenp;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(p[j<span class="number">-1</span>] == <span class="string">'*'</span>)&#123;</span><br><span class="line">                    dp[i][j] = dp[i][j<span class="number">-1</span>] || dp[i<span class="number">-1</span>][j] || dp[i<span class="number">-1</span>][j<span class="number">-1</span>];</span><br><span class="line">                &#125;   </span><br><span class="line">                <span class="keyword">else</span>&#123;</span><br><span class="line">                    dp[i][j] = (s[i<span class="number">-1</span>] == p[j<span class="number">-1</span>] || p[j<span class="number">-1</span>] == <span class="string">'?'</span>) &amp;&amp; dp[i<span class="number">-1</span>][j<span class="number">-1</span>];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[lens][lenp];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>二维DP的做法在字符串比较长的时候耗时就会比较多，在Leetcode上通过1801个test cases花了1636ms，另外一个做法是相对快很多，只用了20ms。基本思路是用双指针对s串和p串做一一匹配，其中可能遇到以下几种情况：</p>
+<blockquote>
+<p>1、p[j]==’?’或s[i]==p[j]，这时成功匹配，指针i和j继续指向下一个位置；<br>2、p[j]==’<em>‘，这时应该先用一个循环把可能存在的连续’</em>‘跳过（多个连续的’<em>‘等价于一个’</em>‘），然后记录下此时的s串位置和’<em>‘位置，代表最新的’</em>‘匹配点；<br>3、p[j]!=s[i]，此时应更新’<em>‘匹配点，也就是将s串的这个位置纳入到匹配串中，如果之前没有过’</em>‘匹配点，则直接返回false。</p>
+</blockquote>
+<p>完整代码如下：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Solution &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isMatch</span><span class="params">(<span class="built_in">string</span> s, <span class="built_in">string</span> p)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">bool</span> flag = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">int</span> slast = <span class="number">0</span>, plast = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(;s[i]!=<span class="string">'\0'</span>;i++,j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(p[j] == <span class="string">'?'</span>)&#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(p[j] == <span class="string">'*'</span>)&#123;</span><br><span class="line">                flag = <span class="literal">true</span>;</span><br><span class="line">                slast = i; plast = j;</span><br><span class="line">                <span class="keyword">while</span>(p[plast] == <span class="string">'*'</span>) plast++;</span><br><span class="line">                <span class="keyword">if</span>(p[plast]==<span class="string">'\0'</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">                i = slast - <span class="number">1</span>;</span><br><span class="line">                j = plast - <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(s[i] != p[j])&#123;</span><br><span class="line">                    <span class="keyword">if</span>(!flag) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                    slast ++;</span><br><span class="line">                    i = slast - <span class="number">1</span>;</span><br><span class="line">                    j = plast - <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(p[j] == <span class="string">'*'</span>) j++;</span><br><span class="line">        <span class="keyword">return</span> p[j] == <span class="string">'\0'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>除了上述两个方法外，还有其他的实现思路。看了一下论坛印象比较深的是一个贪心算法，其思路是把p串根据’<em>‘分割成几个子串，然后把这几个子串按顺序一一跟s串去匹配，如果都能在s串中找到匹配字符串且s串的剩余部分都能按顺序跟</em>匹配上的话，则匹配成功，这个有时间可以实现一下。另外DP数组可以是一维的，优化思路大概是用一个值来记录dp[i-1][j-1]状态，可以节省空间和搜索时间。</p>
 
       
     </div>
@@ -332,9 +341,7 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
       
         <div class="post-tags">
           
-            <a href="/tags/iOS/" rel="tag">#iOS</a>
-          
-            <a href="/tags/Objective-C/" rel="tag">#Objective-C</a>
+            <a href="/tags/Leetcode/" rel="tag">#Leetcode</a>
           
         </div>
       
@@ -343,13 +350,13 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/27/We-Don-t-Need-Watchers-Anyway/" rel="next" title="We Don't Need Watchers Anyway">
+                <i class="fa fa-chevron-left"></i> We Don't Need Watchers Anyway
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/27/We-Don-t-Need-Watchers-Anyway/" rel="prev" title="We Don't Need Watchers Anyway">
-                We Don't Need Watchers Anyway <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -375,8 +382,8 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/"
-           data-title="iOS-利用Catogory给已存在对象添加实例变量" data-url="http://jinpoon.com/2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/">
+      <div class="ds-thread" data-thread-key="2016/08/23/Leetcode-44-Wildcard-Matching/"
+           data-title="Leetcode 44: Wildcard Matching" data-url="http://jinpoon.com/2016/08/23/Leetcode-44-Wildcard-Matching/">
       </div>
     
   </div>
@@ -472,7 +479,7 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Category与实例变量"><span class="nav-number">1.</span> <span class="nav-text">Category与实例变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#利用Category添加实例变量"><span class="nav-number">2.</span> <span class="nav-text">利用Category添加实例变量</span></a></li></ol></div>
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
