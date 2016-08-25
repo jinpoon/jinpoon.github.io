@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="iOS,Objective-C," />
+  <meta name="keywords" content="Leetcode," />
 
 
 
@@ -57,19 +57,25 @@
 
 
 
-<meta name="description" content="之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。
-Category与实例变量Category是Objective-C中的一个扩展机制，通过Category，开发者可以在外部给一个类添加新的方法，从而达到扩展已知类的作用，这是比继承要更加方便的扩展方法，有助于把方法分类应用到不同的需求中，此外也可以帮助开发者对不开源的库进行自己的调整。针对后一种情况，开发">
+<meta name="description" content="题目如下：
+
+Given an unsorted array of integers, find the length of longest increasing subsequence.
+For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequence is [2, 3, 7, 101], ther">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iOS-利用Catogory给已存在对象添加实例变量">
-<meta property="og:url" content="http://jinpoon.com/2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/index.html">
+<meta property="og:title" content="Leetcode 300: Longest Increasing Subsequence">
+<meta property="og:url" content="http://jinpoon.com/2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/index.html">
 <meta property="og:site_name" content="JIN">
-<meta property="og:description" content="之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。
-Category与实例变量Category是Objective-C中的一个扩展机制，通过Category，开发者可以在外部给一个类添加新的方法，从而达到扩展已知类的作用，这是比继承要更加方便的扩展方法，有助于把方法分类应用到不同的需求中，此外也可以帮助开发者对不开源的库进行自己的调整。针对后一种情况，开发">
-<meta property="og:updated_time" content="2016-03-24T15:20:15.000Z">
+<meta property="og:description" content="题目如下：
+
+Given an unsorted array of integers, find the length of longest increasing subsequence.
+For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequence is [2, 3, 7, 101], ther">
+<meta property="og:updated_time" content="2016-08-25T06:53:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS-利用Catogory给已存在对象添加实例变量">
-<meta name="twitter:description" content="之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。
-Category与实例变量Category是Objective-C中的一个扩展机制，通过Category，开发者可以在外部给一个类添加新的方法，从而达到扩展已知类的作用，这是比继承要更加方便的扩展方法，有助于把方法分类应用到不同的需求中，此外也可以帮助开发者对不开源的库进行自己的调整。针对后一种情况，开发">
+<meta name="twitter:title" content="Leetcode 300: Longest Increasing Subsequence">
+<meta name="twitter:description" content="题目如下：
+
+Given an unsorted array of integers, find the length of longest increasing subsequence.
+For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequence is [2, 3, 7, 101], ther">
 
 
 
@@ -87,7 +93,7 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
   };
 </script>
 
-  <title> iOS-利用Catogory给已存在对象添加实例变量 | JIN </title>
+  <title> Leetcode 300: Longest Increasing Subsequence | JIN </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -237,7 +243,7 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
             
             
               
-                iOS-利用Catogory给已存在对象添加实例变量
+                Leetcode 300: Longest Increasing Subsequence
               
             
           </h1>
@@ -249,8 +255,8 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-03-24T20:31:21+08:00" content="2016-03-24">
-              2016-03-24
+            <time itemprop="dateCreated" datetime="2016-08-25T14:42:17+08:00" content="2016-08-25">
+              2016-08-25
             </time>
           </span>
 
@@ -279,8 +285,8 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/" itemprop="commentsCount"></span>
+                <a href="/2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -290,7 +296,7 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
 
           
           
-             <span id="/2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/" class="leancloud_visitors" data-flag-title="iOS-利用Catogory给已存在对象添加实例变量">
+             <span id="/2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/" class="leancloud_visitors" data-flag-title="Leetcode 300: Longest Increasing Subsequence">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -311,22 +317,15 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
       
 
       
-        <p>之前线上笔试被问到这道题，之前在实践的时候由于要实现需求，做过类似的事情，现在将其整理一下。</p>
-<h2 id="Category与实例变量"><a href="#Category与实例变量" class="headerlink" title="Category与实例变量"></a>Category与实例变量</h2><p>Category是Objective-C中的一个扩展机制，通过Category，开发者可以在外部给一个类添加新的方法，从而达到扩展已知类的作用，这是比继承要更加方便的扩展方法，有助于把方法分类应用到不同的需求中，此外也可以帮助开发者对不开源的库进行自己的调整。针对后一种情况，开发者很有可能会需要添加自己想要的实例变量，但是，在编译时，Objective-C是不允许向Category添加实例变量的（虽然允许声明属性，但不会自动生成getter/setter），但是也并非没有办法。OC的运行时特性可以实现这样的需求。</p>
-<a id="more"></a>
-<h2 id="利用Category添加实例变量"><a href="#利用Category添加实例变量" class="headerlink" title="利用Category添加实例变量"></a>利用Category添加实例变量</h2><p>Objective-C的运行时库提供了两个函数，<code>objc_getAssociatedObject()</code>和<code>objc_setAssociatedObject()</code>.可以利用这两个函数来重写getter/setter.以下是示例：</p>
-<ol>
-<li><p>首先要引入运行时库：</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#import <span class="meta-string">&lt;objc/runtime.h&gt;</span></span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>添加属性</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">MyCategory</span>(<span class="title">ClassName</span>)</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>) <span class="built_in">NSString</span> *newProperty;</span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重写getter/setter</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">MyCategory</span>(<span class="title">ClassName</span>)</span></span><br><span class="line"></span><br><span class="line">-(<span class="keyword">void</span>) setNewProperty:(<span class="built_in">NSString</span> *)newProperty;</span><br><span class="line">&#123;</span><br><span class="line">	objc_setAssociatedObject(<span class="keyword">self</span>, &amp;newProperty, newProperty, OBJC_ASSO<span class="built_in">CIATION_COPY_NONATOMIC</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-(<span class="keyword">void</span>) getNewProperty</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">return</span> objc_getAssociatedObject(<span class="keyword">self</span>, &amp;newProperty);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>其中，<code>objc_getAssociatedObject()</code>接受四个参数，第一个参数是源对象，第二个参数是标记关联属性的键，其类型是<code>const void *</code>，有几种写法都是对的：<code>@selector()</code>, <code>&amp;</code>，和<code>const void *</code>，第三个参数是关联对象(即传入的值)，第四个参数是关联策略，是一个枚举值，包括：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> &#123;</span><br><span class="line">OBJC_ASSOCIATION_ASSIGN = <span class="number">0</span>,</span><br><span class="line">OBJC_ASSOCIATION_RETAIN_NONATOMIC = <span class="number">1</span>,</span><br><span class="line">OBJC_ASSOCIATION_COPY_NONATOMIC = <span class="number">3</span>,</span><br><span class="line">OBJC_ASSOCIATION_RETAIN = <span class="number">01401</span>,</span><br><span class="line">OBJC_ASSOCIATION_COPY = <span class="number">01403</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+        <p>题目如下：</p>
+<blockquote>
+<p>Given an unsorted array of integers, find the length of longest increasing subsequence.</p>
+<p>For example,<br>Given [10, 9, 2, 5, 3, 7, 101, 18],<br>The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.</p>
+<p>Your algorithm should run in O(n2) complexity.</p>
+<p>Follow up: Could you improve it to O(n log n) time complexity?</p>
+</blockquote>
+<p>最长递增子序列是比较经典的动态规划题目，O(n^2)的做法也很容易想出来，dp[i]代表在i位置所能匹配到最长的递增子序列长度，在每次迭代时需要对之前的每个元素做一次比较，然后更新最大值。直接贴代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Solution &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lengthOfLIS</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> size = nums.size();</span><br><span class="line">        <span class="keyword">if</span>(!size) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> i, j ;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; dp(size, <span class="number">1</span>);</span><br><span class="line">        dp[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> max_len = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;size;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(j=<span class="number">0</span>; j&lt;=i<span class="number">-1</span>; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(nums[i] &gt; nums[j] &amp;&amp; dp[i] &lt; dp[j]+<span class="number">1</span>)&#123;</span><br><span class="line">                    dp[i] = dp[j] + <span class="number">1</span>;</span><br><span class="line">                    max_len = max(max_len, dp[i]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> max_len;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>由于时间复杂度比较高，所以耗时会比较长。原题最后也提出了一个问题：能不能找到复杂度为O(nlogn)的方法呢？结合Binary Search可以做到这一点。具体做法是用一个数组S把当前匹配到的最长递增子序列给存起来，有一个新的元素n需要比较时，先把n跟S最后一个元素S[last]比较，如果n比较大的话直接放进来，如果n比S[last]小，则对S做一个二分搜索，在S中找到n的下限（lower bound)，然后把n赋值给下限位置的元素。最后输出S数组的长度即可。这样，所需的操作即N次迭代以及每次迭代的二分搜索，可以大大节省时间。下面贴一下代码（S数组可以省去，只记录尾部，实现O(1)space）：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Solution &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lengthOfLIS</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> size = nums.size();</span><br><span class="line">        <span class="keyword">if</span>(!size) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::iterator pos=nums.begin();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> &amp;val: nums)&#123;</span><br><span class="line">            <span class="keyword">auto</span> it = lower_bound(nums.begin(), pos, val);</span><br><span class="line">            *it = val;</span><br><span class="line">            <span class="keyword">if</span>(it==pos) pos++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> pos-nums.begin();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -341,9 +340,7 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
       
         <div class="post-tags">
           
-            <a href="/tags/iOS/" rel="tag">#iOS</a>
-          
-            <a href="/tags/Objective-C/" rel="tag">#Objective-C</a>
+            <a href="/tags/Leetcode/" rel="tag">#Leetcode</a>
           
         </div>
       
@@ -352,13 +349,13 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/08/23/Leetcode-44-Wildcard-Matching/" rel="next" title="Leetcode 44: Wildcard Matching">
+                <i class="fa fa-chevron-left"></i> Leetcode 44: Wildcard Matching
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/27/We-Don-t-Need-Watchers-Anyway/" rel="prev" title="We Don't Need Watchers Anyway">
-                We Don't Need Watchers Anyway <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -384,8 +381,8 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/"
-           data-title="iOS-利用Catogory给已存在对象添加实例变量" data-url="http://jinpoon.com/2016/03/24/iOS-利用Catogory给已存在对象添加实例变量/">
+      <div class="ds-thread" data-thread-key="2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/"
+           data-title="Leetcode 300: Longest Increasing Subsequence" data-url="http://jinpoon.com/2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/">
       </div>
     
   </div>
@@ -481,7 +478,7 @@ Category与实例变量Category是Objective-C中的一个扩展机制，通过Ca
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Category与实例变量"><span class="nav-number">1.</span> <span class="nav-text">Category与实例变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#利用Category添加实例变量"><span class="nav-number">2.</span> <span class="nav-text">利用Category添加实例变量</span></a></li></ol></div>
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
