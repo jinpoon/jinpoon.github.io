@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Leetcode," />
+  <meta name="keywords" content="Labs,18600," />
 
 
 
@@ -57,25 +57,16 @@
 
 
 
-<meta name="description" content="题目如下：
-
-Given an unsorted array of integers, find the length of longest increasing subsequence.
-For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequence is [2, 3, 7, 101], ther">
+<meta name="description" content="18-600 : Foundations of Computer Systems 是CMU ECE系在2016Fall为了解决15213课容量太小太多人选而新开的一门课，其内容包括了以往的CS系的“镇校神课”15-513和15/18-213(Introduction to Computer Systems，也叫ICS或CSAPP)，还加上了ECE 18-640(Foundation of Comp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode 300: Longest Increasing Subsequence">
-<meta property="og:url" content="http://jinpoon.com/2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/index.html">
+<meta property="og:title" content="#18600 datalab">
+<meta property="og:url" content="http://jinpoon.com/2016/09/04/18600-datalab/index.html">
 <meta property="og:site_name" content="JIN">
-<meta property="og:description" content="题目如下：
-
-Given an unsorted array of integers, find the length of longest increasing subsequence.
-For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequence is [2, 3, 7, 101], ther">
-<meta property="og:updated_time" content="2016-08-25T06:59:25.000Z">
+<meta property="og:description" content="18-600 : Foundations of Computer Systems 是CMU ECE系在2016Fall为了解决15213课容量太小太多人选而新开的一门课，其内容包括了以往的CS系的“镇校神课”15-513和15/18-213(Introduction to Computer Systems，也叫ICS或CSAPP)，还加上了ECE 18-640(Foundation of Comp">
+<meta property="og:updated_time" content="2016-09-06T12:24:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leetcode 300: Longest Increasing Subsequence">
-<meta name="twitter:description" content="题目如下：
-
-Given an unsorted array of integers, find the length of longest increasing subsequence.
-For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequence is [2, 3, 7, 101], ther">
+<meta name="twitter:title" content="#18600 datalab">
+<meta name="twitter:description" content="18-600 : Foundations of Computer Systems 是CMU ECE系在2016Fall为了解决15213课容量太小太多人选而新开的一门课，其内容包括了以往的CS系的“镇校神课”15-513和15/18-213(Introduction to Computer Systems，也叫ICS或CSAPP)，还加上了ECE 18-640(Foundation of Comp">
 
 
 
@@ -93,7 +84,7 @@ For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequenc
   };
 </script>
 
-  <title> Leetcode 300: Longest Increasing Subsequence | JIN </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title> #18600 datalab | JIN </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -243,7 +234,7 @@ For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequenc
             
             
               
-                Leetcode 300: Longest Increasing Subsequence
+                #18600 datalab
               
             
           </h1>
@@ -255,8 +246,8 @@ For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequenc
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-08-25T14:42:17+08:00" content="2016-08-25">
-              2016-08-25
+            <time itemprop="dateCreated" datetime="2016-09-04T22:19:52+08:00" content="2016-09-04">
+              2016-09-04
             </time>
           </span>
 
@@ -285,8 +276,8 @@ For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequenc
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/" itemprop="commentsCount"></span>
+                <a href="/2016/09/04/18600-datalab/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/04/18600-datalab/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -296,7 +287,7 @@ For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequenc
 
           
           
-             <span id="/2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/" class="leancloud_visitors" data-flag-title="Leetcode 300: Longest Increasing Subsequence">
+             <span id="/2016/09/04/18600-datalab/" class="leancloud_visitors" data-flag-title="#18600 datalab">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -317,16 +308,71 @@ For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequenc
       
 
       
-        <p>题目如下：</p>
-<blockquote>
-<p>Given an unsorted array of integers, find the length of longest increasing subsequence.</p>
-<p>For example,<br>Given [10, 9, 2, 5, 3, 7, 101, 18],<br>The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.</p>
-<p>Your algorithm should run in O(n2) complexity.</p>
-<p>Follow up: Could you improve it to O(n log n) time complexity?</p>
-</blockquote>
+        <p>18-600 : Foundations of Computer Systems 是CMU ECE系在2016Fall为了解决15213课容量太小太多人选而新开的一门课，其内容包括了以往的CS系的“镇校神课”15-513和15/18-213(Introduction to Computer Systems，也叫ICS或CSAPP)，还加上了ECE 18-640(Foundation of Computer Architectures)的一部分内容。“镇校神课“15213是CMU计算机系本科生必修的一门基础课，也是ECE和CS很多其它分支课程的prerequisite，以课程知识量涵盖广和workload重而闻名。<br>以前本科计算机组成原理水水过了，也没有选过编译原理，总感觉知识结构里缺了很重要的一环，所以想选这门课打打基础。</p>
+<p>第一次的lab叫datalab，一共包含13题。跟往年CSAPP的datalab有几题重复，也有几题不一样，但要求都是利用bit operation做的一些操作，前10题与整形数integer相关，后3题与单精度浮点数float相关。因为要训练对位操作的理解，所以每一题对解题所用到的操作符数量和操作符的种类（’=’不算入操作符，可以随便用）都有比较严格的限制。而且，也要求尽量不要用到大小超过0x7f的写死的数字来帮助运算。</p>
 <a id="more"></a>
-<p>最长递增子序列是比较经典的动态规划题目，O(n^2)的做法也很容易想出来，dp[i]代表在i位置所能匹配到最长的递增子序列长度，在每次迭代时需要对之前的每个元素做一次比较，然后更新最大值。直接贴代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Solution &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lengthOfLIS</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> size = nums.size();</span><br><span class="line">        <span class="keyword">if</span>(!size) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> i, j ;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; dp(size, <span class="number">1</span>);</span><br><span class="line">        dp[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> max_len = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;size;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(j=<span class="number">0</span>; j&lt;=i<span class="number">-1</span>; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(nums[i] &gt; nums[j] &amp;&amp; dp[i] &lt; dp[j]+<span class="number">1</span>)&#123;</span><br><span class="line">                    dp[i] = dp[j] + <span class="number">1</span>;</span><br><span class="line">                    max_len = max(max_len, dp[i]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> max_len;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
-<p>由于时间复杂度比较高，所以耗时会比较长。原题最后也提出了一个问题：能不能找到复杂度为O(nlogn)的方法呢？结合Binary Search可以做到这一点。具体做法是用一个数组S把当前匹配到的最长递增子序列给存起来，有一个新的元素n需要比较时，先把n跟S最后一个元素S[last]比较，如果n比较大的话直接放进来，如果n比S[last]小，则对S做一个二分搜索，在S中找到n的下限（lower bound)，然后把n赋值给下限位置的元素。最后输出S数组的长度即可。这样，所需的操作即N次迭代以及每次迭代的二分搜索，可以大大节省时间。下面贴一下代码（S数组可以省去，只记录尾部，实现O(1)space）：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Solution &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lengthOfLIS</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> size = nums.size();</span><br><span class="line">        <span class="keyword">if</span>(!size) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::iterator pos=nums.begin();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> &amp;val: nums)&#123;</span><br><span class="line">            <span class="keyword">auto</span> it = lower_bound(nums.begin(), pos, val);</span><br><span class="line">            *it = val;</span><br><span class="line">            <span class="keyword">if</span>(it==pos) pos++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> pos-nums.begin();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>1.evenBits<br>Requirement:</p>
+<blockquote>
+<p>return word with all even-numbered bits set to 1<br>Legal ops: ! ~ &amp; ^ | + &lt;&lt; &gt;&gt;<br>Max ops: 8<br>Rating: 1</p>
+</blockquote>
+<p>这题分值1分，最大操作数是8个，比较简单，要求输出单数位均为1的整形数，即0x55555555，直接贴代码<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">evenBits</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> n=<span class="number">0x55</span>;</span><br><span class="line">  n=n&lt;&lt;<span class="number">8</span>|n;<span class="comment">//0x5555</span></span><br><span class="line">  n=n&lt;&lt;<span class="number">16</span>|n;<span class="comment">//0x55555555</span></span><br><span class="line">  <span class="keyword">return</span> n;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>2.bitNor<br>Requirement:</p>
+<blockquote>
+<p> ~(x|y) using only ~ and &amp;<br>Example: bitNor(0x6, 0x5) = 0xFFFFFFF8<br>Legal ops: ~ &amp;<br>Max ops: 8<br>Rating: 1</p>
+</blockquote>
+<p>此题1分，最大操作数8个，easy，要求仅用~和&amp;操作符实现~(x|y)，把真值表填一下就可以推出来这个式子其实就等价于(~x)&amp;(~y).<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">bitNor</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (~x)&amp;(~y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3.tmax<br>Requirement:</p>
+<blockquote>
+<p>TMax - return maximum two’s complement integer<br>Legal ops: ! ~ &amp; ^ | + &lt;&lt; &gt;&gt;<br>Max ops: 4<br>Rating: 1</p>
+</blockquote>
+<p>1分，最大操作数4个，要求返回最大的2的完全平方数？？（实际的测试用例看来好像是要求返回最大的正数），考虑符号位。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">tmax</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> ~(<span class="number">1</span>&lt;&lt;<span class="number">31</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>4.implication<br>Reqirement:</p>
+<blockquote>
+<p>return x -&gt; y in propositional logic - 0 for false, 1 for ture.<br>Example: implication(1,1) = 1<br>        implication(1,0) = 0<br>Legal ops: ! ~ ^ |<br>Max ops: 5<br>Rating: 2</p>
+</blockquote>
+<p>2分，最大操作数5个。字面意义把输入的x和y当作是命题中的两个子命题，返回命题x-&gt;y的真假，按命题逻辑的规则来就可以了。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">implication</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (!x) | y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>5.divpwr2<br>Requirement:</p>
+<blockquote>
+<p>Compute x/(2^n), for 0 &lt;= n &lt;= 30 Round toward zero<br>Examples: divpwr2(15,1) = 7, divpwr2(-33,4) = -2<br>Legal ops: ! ~ &amp; ^ | + &lt;&lt; &gt;&gt;<br>Max ops: 15<br>Rating: 2</p>
+</blockquote>
+<p>2分，最大操作数15个，要求返回整数x对2的n次方取商。一般来说正整数往右移n位相当于除以2的n次方，但是考虑负数：如果负数商2的n次方，需要加上(n-1)再往右移。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">divpwr2</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> isNeg=x&gt;&gt;<span class="number">31</span>;</span><br><span class="line">    <span class="keyword">int</span> mask=(~<span class="number">0</span>)+(<span class="number">1</span>&lt;&lt;n);</span><br><span class="line">    <span class="keyword">return</span> (x+(isNeg&amp;mask))&gt;&gt;n;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>6.isNegative<br>Requirement:</p>
+<blockquote>
+<p>return 1 if x &lt; 0, return 0 otherwise<br>Legal ops: ! ~ &amp; ^ | + &lt;&lt; &gt;&gt;<br>Max ops: 6<br>Rating: 2</p>
+</blockquote>
+<p>送分题，要求负数返回1，否则返回0. 非负数的最高位也即符号位是0，负数最高位是1，因此只要将x右移31位把符号位提取出来即可。需要注意的是：负数右移的时候补码是1，正数右移补码是0，所以为了避免出现干扰，需要把右移后的x的高30位全部清0，即与1.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">isNegative</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> x&gt;&gt;<span class="number">31</span>&amp;<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>7.conditional<br>Requirement:</p>
+<blockquote>
+<p>same as x ? y : z<br>Example: conditional(2,4,5) = 4<br>Legal ops: ! ~ &amp; ^ | + &lt;&lt; &gt;&gt;<br>Max ops: 16<br>Rating: 3</p>
+</blockquote>
+<p>要求实现三元操作符?，根据输入的x,y,z输出正确的结果。允许使用逻辑取反!，思路就是利用这个’!’来选择的需求。我们把0xffffffff+!x当作是一个mask，用来去掉y和z中我们不想要的一个。x不为0时，mask=0xffffffff,反之，mask=0x00000000，再利用一个取反，就可以实现双边的选择了。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">conditional</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> z)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> zero_mask = !x + (~<span class="number">0</span>);</span><br><span class="line">  <span class="keyword">return</span> (zero_mask&amp;y) + ((~zero_mask)&amp;z);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>8.rotateRight<br>Requirement:</p>
+<blockquote>
+<p>Rotate x to the right by n<br>Can assume that 0 &lt;= n &lt;= 31<br>Examples: rotateRight(0x87654321,4) = 0x18765432<br>Legal ops: ~ &amp; ^ | + &lt;&lt; &gt;&gt;<br>Max ops: 25<br>Rating: 3</p>
+</blockquote>
+<p>这一题刚做的时候有点点难度，搞清楚思路就好了。要求是要用位操作实现32位整形的循环右移，难点是不能够用减号。我们把输入的正数x分成两个部分，一个是从第1位到第n位的部分，称为x1，这是右移的时候会被移出去，需要被放回左边的部分，第二个部分是从n+1到32位的部分，称为x2，这部分是直接右移n位就可以了。<br>难点有两个，第一是不能用减号，怎么把x1和x2分离开，第二是怎么把分离开并位移后的x1 x2结合起来输出答案。<br>解决第一点的思路是用n的相反数(~n+1)加上32，存下这个值作为32-n的值，结合一个n+1到32位值为1的mask, 第二点的思路是利用一种的mask对其进行位移并取反，位移后的x高32-n位给屏蔽掉，让给需要循环位移放回去的x1。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">rotateRight</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> minus32=(~n+<span class="number">1</span>)+<span class="number">32</span>;<span class="comment">//32-n</span></span><br><span class="line">  <span class="keyword">int</span> mask = (~<span class="number">0</span>)+(<span class="number">1</span>&lt;&lt;n);</span><br><span class="line">  <span class="keyword">int</span> overflow = mask &amp; x;</span><br><span class="line">  mask =  ~(mask&lt;&lt;minus32);</span><br><span class="line">  <span class="keyword">return</span> (overflow&lt;&lt;minus32) | ((x&gt;&gt;n)&amp; mask);</span><br><span class="line">  <span class="comment">//return x;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>9.absVal<br>Requirement:</p>
+<blockquote>
+<p>return absolute value of x<br>You may assume -Tmax&lt;=x&lt;=Tmax<br>Legal ops: ! ~ &amp; ^ | + &lt;&lt; &gt;&gt;<br>Max ops: 10<br>Rating: 4</p>
+</blockquote>
+<p>题意很清晰，返回x的绝对值。思路也很直接，非负数（符号位=0）返回它自己，负数返回它的相反数（<code>~x+1</code>），问题是怎么在不允许if，switch等控制结构以及?操作符的前提下实现对正负数的判断选择。我做的第一个版本就是这个思路的直接体现，操作数也比较多，不是最优的实现：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">absVal</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> mask=x&gt;&gt;<span class="number">31</span>; <span class="comment">//x&lt;0时，mask=0xffffffff，反之mask=0x0，注意符号整形右移的补码</span></span><br><span class="line">  <span class="keyword">return</span> ((~mask)&amp;x) + (mask&amp;(~x+<span class="number">1</span>));<span class="comment">//利用对mask的取反实现两边的选择</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的实现方法比较容易想到，但是操作符数量也高达7个，看到排行榜上有4个甚至3个解法，我也开始去想有没有更优化的可能。下面是我的第二个版本：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">absVal</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> mask=x&gt;&gt;<span class="number">31</span>;</span><br><span class="line">  <span class="keyword">int</span> oppx=x^mask;<span class="comment">//x对0xffffffff异或相当于按位取反，对0x0取异或等于它自己</span></span><br><span class="line">  <span class="keyword">return</span> oppx+(mask&amp;<span class="number">1</span>);<span class="comment">//x为负数时，oppx=~x，mask&amp;1=1，这样就得到了~x+1也即为x的绝对值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>10.bang<br>Requirement:</p>
+<blockquote>
+<p>Compute !x without using !<br>Legal ops: ~ &amp; ^ | + &lt;&lt; &gt;&gt;<br>Max ops: 12<br>Rating: 4</p>
+</blockquote>
+<p>要求在不用!操作符的前提下实现!的功能，也就是对非0的输入返回0，对输入0返回1.我的解题思路是从0的性质入手：0的相反数等于它自己，也就是说如果输入x的相反数符号位跟它一样，则可以判断这个数就是0，返回1，否则返回0.代码如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">bang</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> opp = ~x+<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">int</span> signx = x &gt;&gt; <span class="number">31</span>;</span><br><span class="line">  <span class="keyword">int</span> signopp = opp &gt;&gt; <span class="number">31</span>;</span><br><span class="line">  <span class="keyword">return</span> ~(signx | signopp) &amp; <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>11.float_abs<br>Requiremnt:</p>
+<blockquote>
+<p>Return bit-level equivalent of absolute value of f for floating point argument f. Both the argument and result are passed as unsigned int’s, but they are to be interpreted as the bit-level representations of single-precision floating point values.<br>When argument is NaN, return argument..<br>Legal ops: Any integer/unsigned operations incl. ||, &amp;&amp;. also if, while<br>Max ops: 10<br>Rating: 2</p>
+</blockquote>
+<p>从float_abs开始，后面几题就是针对浮点数的运算了，而且从这题开始，也开放了对控制结构的使用。其余的所有操作符都可以对整形使用。这题要求返回一个32位单精度的浮点数的绝对值，这个浮点数的数据按位储存在一个32位无符号整形里面。要想解这题，首先得复习一下浮点数的表示方法。按照IEEE 754标准，单精度浮点数的数据按位如下分布：<br><code>.|........|.......................</code><br>最高位是符号位sign，负数为1，非负为0；第30~23位是指数exp；第22~0位是尾数fraction。这几个部分联合表示成了这个浮点数的值：<br>$ (-1)^{sign}*2^{exp}*fraction $</p>
 
       
     </div>
@@ -341,7 +387,9 @@ For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequenc
       
         <div class="post-tags">
           
-            <a href="/tags/Leetcode/" rel="tag">#Leetcode</a>
+            <a href="/tags/Labs/" rel="tag">#Labs</a>
+          
+            <a href="/tags/18600/" rel="tag">#18600</a>
           
         </div>
       
@@ -350,16 +398,16 @@ For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequenc
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/23/Leetcode-44-Wildcard-Matching/" rel="next" title="Leetcode 44: Wildcard Matching">
-                <i class="fa fa-chevron-left"></i> Leetcode 44: Wildcard Matching
+              <a href="/2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/" rel="next" title="Leetcode 300: Longest Increasing Subsequence">
+                <i class="fa fa-chevron-left"></i> Leetcode 300: Longest Increasing Subsequence
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/09/04/18600-datalab/" rel="prev" title="#18600 datalab">
-                #18600 datalab <i class="fa fa-chevron-right"></i>
+              <a href="/2017/01/08/意义/" rel="prev" title="意义">
+                意义 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -386,8 +434,8 @@ For example,Given [10, 9, 2, 5, 3, 7, 101, 18],The longest increasing subsequenc
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/"
-           data-title="Leetcode 300: Longest Increasing Subsequence" data-url="http://jinpoon.com/2016/08/25/Leetcode-300-Longest-Increasing-Subsequence/">
+      <div class="ds-thread" data-thread-key="2016/09/04/18600-datalab/"
+           data-title="#18600 datalab" data-url="http://jinpoon.com/2016/09/04/18600-datalab/">
       </div>
     
   </div>
